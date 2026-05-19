@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F4FF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Header -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Editar Producto"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#1B3A6B"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Modifica los datos del producto"
+            android:textSize="14sp"
+            android:textColor="#888888"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Campo Nombre -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre del producto"
+            android:layout_marginBottom="16dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etNombreEditar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textCapSentences"
+                android:maxLines="1"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Spinner Categoría -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Categoría"
+            android:textSize="14sp"
+            android:textColor="#555555"
+            android:layout_marginBottom="6dp"/>
+
+        <Spinner
+            android:id="@+id/spinnerCategoriaEditar"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:background="@drawable/spinner_bg"
+            android:paddingHorizontal="12dp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Campo Cantidad -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Cantidad en stock"
+            android:layout_marginBottom="16dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etCantidadEditar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:maxLines="1"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Campo Precio -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Precio unitario (S/)"
+            android:layout_marginBottom="32dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etPrecioEditar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:maxLines="1"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Botón Actualizar -->
+        <Button
+            android:id="@+id/btnActualizar"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="✅  Actualizar Producto"
+            android:textSize="16sp"
+            android:backgroundTint="#1B3A6B"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Botón Eliminar -->
+        <Button
+            android:id="@+id/btnEliminarEditar"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="🗑️  Eliminar Producto"
+            android:textSize="15sp"
+            android:backgroundTint="#CC2222"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Botón Cancelar -->
+        <Button
+            android:id="@+id/btnCancelarEditar"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="Cancelar"
+            android:textSize="15sp"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"/>
+
+    </LinearLayout>
+</ScrollView>

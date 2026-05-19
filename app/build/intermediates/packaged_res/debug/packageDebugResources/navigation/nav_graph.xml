@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.libreriaavance1.ui.HomeFragment"
+        android:label="Mi Librería">
+        <action
+            android:id="@+id/action_home_to_lista"
+            app:destination="@id/listaFragment"/>
+        <action
+            android:id="@+id/action_home_to_agregar"
+            app:destination="@id/agregarFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/listaFragment"
+        android:name="com.example.libreriaavance1.ui.ListaFragment"
+        android:label="Inventario">
+        <action
+            android:id="@+id/action_lista_to_agregar"
+            app:destination="@id/agregarFragment"/>
+        <action
+            android:id="@+id/action_lista_to_editar"
+            app:destination="@id/editarFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/agregarFragment"
+        android:name="com.example.libreriaavance1.ui.AgregarFragment"
+        android:label="Agregar Producto"/>
+
+    <fragment
+        android:id="@+id/editarFragment"
+        android:name="com.example.libreriaavance1.ui.EditarFragment"
+        android:label="Editar Producto">
+        <action
+            android:id="@+id/action_editar_to_lista"
+            app:destination="@id/listaFragment"
+            app:popUpTo="@id/listaFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+
+</navigation>

@@ -1,0 +1,34 @@
+[
+    {
+        "merged": "com.example.libreriaavance1.app-merged_res-49:/layout_fragment_agregar.xml.flat",
+        "source": "com.example.libreriaavance1.app-main-51:/layout/fragment_agregar.xml"
+    },
+    {
+        "merged": "com.example.libreriaavance1.app-merged_res-49:/navigation_nav_graph.xml.flat",
+        "source": "com.example.libreriaavance1.app-main-51:/navigation/nav_graph.xml"
+    },
+    {
+        "merged": "com.example.libreriaavance1.app-merged_res-49:/layout_activity_main.xml.flat",
+        "source": "com.example.libreriaavance1.app-main-51:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.example.libreriaavance1.app-merged_res-49:/layout_fragment_editar.xml.flat",
+        "source": "com.example.libreriaavance1.app-main-51:/layout/fragment_editar.xml"
+    },
+    {
+        "merged": "com.example.libreriaavance1.app-merged_res-49:/drawable_spinner_bg.xml.flat",
+        "source": "com.example.libreriaavance1.app-main-51:/drawable/spinner_bg.xml"
+    },
+    {
+        "merged": "com.example.libreriaavance1.app-merged_res-49:/layout_item_producto.xml.flat",
+        "source": "com.example.libreriaavance1.app-main-51:/layout/item_producto.xml"
+    },
+    {
+        "merged": "com.example.libreriaavance1.app-merged_res-49:/layout_fragment_home.xml.flat",
+        "source": "com.example.libreriaavance1.app-main-51:/layout/fragment_home.xml"
+    },
+    {
+        "merged": "com.example.libreriaavance1.app-merged_res-49:/layout_fragment_lista.xml.flat",
+        "source": "com.example.libreriaavance1.app-main-51:/layout/fragment_lista.xml"
+    }
+]
